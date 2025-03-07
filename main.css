@@ -5,6 +5,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+body{
+    background-color: #f4f4f4;
+}
+
 .container{ /*garante um grid fixo-adaptativo*/
     max-width: 1024px;
     width: 100%;
@@ -78,6 +82,10 @@ header{
     max-width: 100%; /*removendo scroll*/
 }
 
+.destaque{
+    margin-bottom: 56px;
+}
+
 .destaque .noticia a{
     display: flex;
     font-size: 2em;
@@ -99,7 +107,9 @@ aside .noticia{
     margin-bottom: 24px;
 }
 
-.coticias{
+.noticias{
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-columns: repeat(3, 32.6%);
+    column-gap: 1%;
+    row-gap: 5%;
 }
